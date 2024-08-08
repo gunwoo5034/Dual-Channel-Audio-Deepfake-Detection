@@ -1,0 +1,12 @@
+torch==2.2.2
+torchaudio== 2.2.2
+torchinfo== 1.8.0
+torchvision== 0.17.2
+numpy
+scipy
+librosa
+matplotlib
+scikit-learn
+torchinfo
+puts==0.0.8
+

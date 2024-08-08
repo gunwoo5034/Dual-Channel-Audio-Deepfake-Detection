@@ -1,0 +1,13 @@
+2024-08-06 09:32:30,177 - INFO - Batch size: 64, seed: 1234, epochs: 50
+2024-08-06 09:32:30,177 - INFO - Evaluating model: LCNN
+2024-08-06 09:32:30,177 - INFO - Input feature : lfcc
+2024-08-06 09:32:30,177 - INFO - Model kwargs  : {
+  "in_channels": 1,
+  "device": "cuda"
+}
+2024-08-06 09:32:30,177 - INFO - Loading data...
+2024-08-06 09:32:35,312 - INFO - Loading data from /home/gunwoo/kunwoolee/DEEPFAKE_project/data_asvspoof_DR/train/ASVspoof2019_LA_eval/flac/LA_E_A9997819_r.wav...!
+2024-08-06 09:32:35,320 - INFO - Testing model on  71237 audio files.
+2024-08-06 09:32:35,685 - INFO - Loaded checkpoint from epoch 25
+2024-08-06 10:00:14,469 - INFO - test acc: 70.28 - test eer : 0.2507
+2024-08-06 10:00:14,551 - INFO - Prediction Saved: saved/LCNN_lfcc_6_2ch/best_pred.json

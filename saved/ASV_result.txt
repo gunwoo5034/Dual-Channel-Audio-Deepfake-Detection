@@ -1,0 +1,12 @@
+# Empirical Results
+ 
+-   Accuracy
+-   F1 score
+-   Area Under the Receiver Operating Characteristic Curve (ROC AUC)
+-   Equal Error Rate (EER)
+ 
+| Experiment            | Accuracy | F1 Score | ROC AUC | EER | EER2 |
+| :---------            | :------: | :------: | :-----: | :-: | :--: |
+| WaveRNN_wave_6_1ch    | 0.962 | 0.000 | 0.5000 | 0.5000 | 0.0000 |
+| ShallowCNN_mfcc_6_1ch | 0.959 | 0.462 | 0.7207 | 0.3545 | 0.0212 |
+| TSSD_wave_6_1ch       | 0.977 | 0.575 | 0.7081 | 0.3683 | 0.0014 |
