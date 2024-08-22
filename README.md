@@ -65,6 +65,9 @@ optional parser argument:
 --amount_of_use          Only some of the sample are used (default: 160)
 ```
 
+### Label
+You should prepare label.txt for label of your dataset. or you can modify `load_directory_split_train_test` in `Dataloader.py` fitting on your datasets. 
+
 
 Example:
 
