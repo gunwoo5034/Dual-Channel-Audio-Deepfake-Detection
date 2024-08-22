@@ -17,8 +17,8 @@ pip install -r requirements.txt
 
 You may download the datasets from following URLs:
 
-- ASVspoof 2019 : Link(https://www.asvspoof.org/index2019.html)
-- FakeAVCeleb : Link(https://sites.google.com/view/fakeavcelebdash-lab/)
+- ASVspoof 2019 : [Link](https://www.asvspoof.org/index2019.html)
+- FakeAVCeleb : [Link](https://sites.google.com/view/fakeavcelebdash-lab/)
 - SPC(Self Colleted) : Not published
 
 After downloading dataset, you may set them under 'Data/train' and 'Data/test'. Dataset folder should look like:
