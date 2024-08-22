@@ -23,7 +23,7 @@ You may download the datasets from following URLs:
 
 After downloading dataset, you may set them under 'Data/train' and 'Data/test'. Dataset folder should look like:
 
-'''
+```
 Data
 ├── train
 │   ├── real
@@ -35,13 +35,13 @@ Data
     │   └── real wavs
     └── fake
         └── fake wavs
-'''
+```
 
 
 ##Training
 Use the ['train.py'](train.py) to train the model.
 
-'''
+```
 usage: train.py [--train_dir TRAIN_DIR] [--test_dir TEST_DIR] [--batch_size BATCH_SIZE] [--epochs EPOCHS]
                 [--seed SEED] [--feature_classname {wave,lfcc,mfcc}] [--model_classname {WaveRNN, TSSD, RawNet, MLP, ShallowCNN, LCNN}]
                 [--device DEVICE] [--deterministic] [--restore] [--eval_only] [--channel {True, False}] [--model_len {1,3,6,10,30}] 
@@ -62,4 +62,4 @@ optional parser argument:
 --channel                Original sound or D/R 2ch(True: Dual channel, False: single channel)
 --model_len              length of model in train(30/10/6/3/1) (default: 6)
 --amount_of_use          Only some of the sample are used (default: 160)
-'''
+```
