@@ -64,3 +64,33 @@ optional parser argument:
 --model_len              length of model in train(30/10/6/3/1) (default: 6)
 --amount_of_use          Only some of the sample are used (default: 160)
 ```
+
+
+Example:
+
+To train the model `ShallowCNN` with `lfcc` feature for dual channel,
+you can run the following command:
+```
+python train.py --train_dir data/train --batch_size 64 --epoch 50 --feature_classname lfcc --model_classname ShallowCNN --channel True
+```
+
+Please use inline environment variable `CUDA_VISIBLE_DEVICES` to specify the GPU deivce(s) to use. For example:
+```
+CUDA_VISIBLE_DEVICE=0 python train.py
+```
+
+
+## Evaluation
+
+
+After Training, the best model and best predictions will be saved in th `saved` directory. Go to the directory `saved` to see the evaluation results
+
+To evaluate on the test set using trained model, you can run the following command:
+```
+python train.py --test_dir data/test --feature_classname lfcc --model_classname ShallowCNN --restore --eval_only --channel True
+```
+
+Run the following command to compute the evaluation results based on saved predictions and labels:
+```
+python metrics.py
+```
