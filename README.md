@@ -68,7 +68,7 @@ optional parser argument:
 ### Label
 You should prepare label.txt for label of your dataset. or you can modify `load_directory_split_train_test` in `Dataloader.py` fitting on your datasets. 
 
-
+### Run
 Example:
 
 To train the model `ShallowCNN` with `lfcc` feature for dual channel,
