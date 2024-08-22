@@ -1,0 +1,102 @@
+2024-06-18 11:20:05,327 - INFO - Batch size: 32, seed: 42, epochs: 50
+2024-06-18 11:20:05,327 - INFO - Training model: MLP
+2024-06-18 11:20:05,328 - INFO - Input feature : mfcc
+2024-06-18 11:20:05,328 - INFO - Model kwargs  : {
+  "in_dim": 3240,
+  "out_dim": 1,
+  "device": "cuda"
+}
+2024-06-18 11:20:05,328 - INFO - Loading data...
+2024-06-18 11:20:05,337 - INFO - Loading data from /home/gunwoo/kunwoolee/DEEPFAKE_project/us/train/real...!
+2024-06-18 11:20:05,442 - INFO - Loading data from /home/gunwoo/kunwoolee/DEEPFAKE_project/us/train/fake...!
+2024-06-18 11:20:05,455 - INFO - Loading data from /home/gunwoo/kunwoolee/DEEPFAKE_project/us_wav/val/real...!
+2024-06-18 11:20:05,463 - INFO - Loading data from /home/gunwoo/kunwoolee/DEEPFAKE_project/us_wav/val/fake...!
+2024-06-18 11:20:05,464 - INFO - Training model on 1282 audio files.
+2024-06-18 11:20:05,464 - INFO - Testing model on  119 audio files.
+2024-06-18 11:20:05,464 - INFO - Train/val ratio: 10.77310924369748
+2024-06-18 11:20:05,464 - INFO - Real/Fake ratio in training: 0.207 (pos_weight)
+2024-06-18 11:20:05,688 - INFO - Model_summary: 
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+MLP                                      [32, 1]                   240
+├─Linear: 1-1                            [32, 120]                 388,920
+├─Linear: 1-2                            [32, 80]                  9,680
+├─BatchNorm1d: 1-3                       [32, 80]                  160
+├─Linear: 1-4                            [32, 1]                   81
+==========================================================================================
+Total params: 399,081
+Trainable params: 399,081
+Non-trainable params: 0
+Total mult-adds (M): 12.76
+==========================================================================================
+Input size (MB): 0.41
+Forward/backward pass size (MB): 0.07
+Params size (MB): 1.60
+Estimated Total Size (MB): 2.08
+==========================================================================================
+2024-06-18 11:22:56,740 - INFO - [000]: loss: 0.4578 - train acc: 88.8456 - test acc: 96.6387 - test eer : 0.1316 -val loss: 0.3821 
+2024-06-18 11:22:56,740 - INFO - Best Test Accuracy: 96.6387 , Best Val Loss : 0.3821
+2024-06-18 11:22:59,761 - INFO - Best Model Saved: saved/MLP_mfcc_1_1ch/best.pt
+2024-06-18 11:22:59,762 - INFO - Prediction Saved: saved/MLP_mfcc_1_1ch/best_pred.json
+2024-06-18 11:25:50,020 - INFO - [001]: loss: 0.3656 - train acc: 96.6459 - test acc: 100.0 - test eer : 0.0 -val loss: 0.26 
+2024-06-18 11:25:50,021 - INFO - Best Test Accuracy: 100.0 , Best Val Loss : 0.26
+2024-06-18 11:25:53,050 - INFO - Best Model Saved: saved/MLP_mfcc_1_1ch/best.pt
+2024-06-18 11:25:53,051 - INFO - Prediction Saved: saved/MLP_mfcc_1_1ch/best_pred.json
+2024-06-18 11:28:43,129 - INFO - [002]: loss: 0.2976 - train acc: 97.9719 - test acc: 100.0 - test eer : 0.0 -val loss: 0.263 
+2024-06-18 11:31:33,282 - INFO - [003]: loss: 0.2556 - train acc: 98.5179 - test acc: 99.1597 - test eer : 0.01 -val loss: 0.2969 
+2024-06-18 11:34:22,708 - INFO - [004]: loss: 0.2276 - train acc: 97.2699 - test acc: 100.0 - test eer : 0.0 -val loss: 0.2169 
+2024-06-18 11:34:22,709 - INFO - Best Test Accuracy: 100.0 , Best Val Loss : 0.2169
+2024-06-18 11:34:25,738 - INFO - Best Model Saved: saved/MLP_mfcc_1_1ch/best.pt
+2024-06-18 11:34:25,739 - INFO - Prediction Saved: saved/MLP_mfcc_1_1ch/best_pred.json
+2024-06-18 11:37:15,850 - INFO - [005]: loss: 0.2036 - train acc: 97.3479 - test acc: 100.0 - test eer : 0.0 -val loss: 0.2135 
+2024-06-18 11:37:15,850 - INFO - Best Test Accuracy: 100.0 , Best Val Loss : 0.2135
+2024-06-18 11:37:18,880 - INFO - Best Model Saved: saved/MLP_mfcc_1_1ch/best.pt
+2024-06-18 11:37:18,881 - INFO - Prediction Saved: saved/MLP_mfcc_1_1ch/best_pred.json
+2024-06-18 11:40:08,966 - INFO - [006]: loss: 0.1802 - train acc: 97.1919 - test acc: 98.3193 - test eer : 0.0909 -val loss: 0.1765 
+2024-06-18 11:42:58,812 - INFO - [007]: loss: 0.1629 - train acc: 96.6459 - test acc: 100.0 - test eer : 0.0 -val loss: 0.1738 
+2024-06-18 11:42:58,812 - INFO - Best Test Accuracy: 100.0 , Best Val Loss : 0.1738
+2024-06-18 11:43:01,841 - INFO - Best Model Saved: saved/MLP_mfcc_1_1ch/best.pt
+2024-06-18 11:43:01,842 - INFO - Prediction Saved: saved/MLP_mfcc_1_1ch/best_pred.json
+2024-06-18 11:45:50,145 - INFO - [008]: loss: 0.1569 - train acc: 96.4899 - test acc: 98.3193 - test eer : 0.0909 -val loss: 0.1467 
+2024-06-18 11:48:38,218 - INFO - [009]: loss: 0.1447 - train acc: 95.6318 - test acc: 96.6387 - test eer : 0.1667 -val loss: 0.139 
+2024-06-18 11:51:26,421 - INFO - [010]: loss: 0.1338 - train acc: 95.0858 - test acc: 99.1597 - test eer : 0.0476 -val loss: 0.1321 
+2024-06-18 11:54:14,620 - INFO - [011]: loss: 0.1258 - train acc: 94.7738 - test acc: 94.958 - test eer : 0.2308 -val loss: 0.0979 
+2024-06-18 11:57:04,405 - INFO - [012]: loss: 0.1152 - train acc: 94.5398 - test acc: 97.479 - test eer : 0.1304 -val loss: 0.1193 
+2024-06-18 11:59:54,788 - INFO - [013]: loss: 0.1082 - train acc: 94.7738 - test acc: 96.6387 - test eer : 0.1667 -val loss: 0.1008 
+2024-06-18 12:02:44,153 - INFO - [014]: loss: 0.1034 - train acc: 93.9938 - test acc: 96.6387 - test eer : 0.1667 -val loss: 0.1012 
+2024-06-18 12:05:32,162 - INFO - [015]: loss: 0.0968 - train acc: 93.7598 - test acc: 92.437 - test eer : 0.3103 -val loss: 0.0884 
+2024-06-18 12:08:20,752 - INFO - [016]: loss: 0.0933 - train acc: 93.2917 - test acc: 94.958 - test eer : 0.2308 -val loss: 0.0806 
+2024-06-18 12:11:09,455 - INFO - [017]: loss: 0.0891 - train acc: 92.8237 - test acc: 96.6387 - test eer : 0.1667 -val loss: 0.0812 
+2024-06-18 12:13:57,599 - INFO - [018]: loss: 0.0856 - train acc: 93.0577 - test acc: 91.5966 - test eer : 0.3333 -val loss: 0.079 
+2024-06-18 12:16:45,622 - INFO - [019]: loss: 0.0842 - train acc: 92.3557 - test acc: 94.958 - test eer : 0.2308 -val loss: 0.0841 
+2024-06-18 12:19:33,838 - INFO - [020]: loss: 0.0818 - train acc: 92.1217 - test acc: 94.1176 - test eer : 0.2593 -val loss: 0.0801 
+2024-06-18 12:22:21,880 - INFO - [021]: loss: 0.0774 - train acc: 91.2637 - test acc: 92.437 - test eer : 0.3103 -val loss: 0.074 
+2024-06-18 12:25:09,974 - INFO - [022]: loss: 0.0768 - train acc: 91.1076 - test acc: 89.916 - test eer : 0.375 -val loss: 0.0706 
+2024-06-18 12:27:58,051 - INFO - [023]: loss: 0.0731 - train acc: 91.9657 - test acc: 94.958 - test eer : 0.2308 -val loss: 0.0626 
+2024-06-18 12:30:46,155 - INFO - [024]: loss: 0.0728 - train acc: 91.4977 - test acc: 95.7983 - test eer : 0.2 -val loss: 0.0643 
+2024-06-18 12:33:34,354 - INFO - [025]: loss: 0.068 - train acc: 91.8097 - test acc: 96.6387 - test eer : 0.1667 -val loss: 0.0655 
+2024-06-18 12:36:22,388 - INFO - [026]: loss: 0.0661 - train acc: 91.8877 - test acc: 93.2773 - test eer : 0.2857 -val loss: 0.0593 
+2024-06-18 12:39:10,496 - INFO - [027]: loss: 0.0656 - train acc: 91.2637 - test acc: 95.7983 - test eer : 0.2 -val loss: 0.0574 
+2024-06-18 12:41:59,881 - INFO - [028]: loss: 0.0654 - train acc: 91.1076 - test acc: 92.437 - test eer : 0.3103 -val loss: 0.0535 
+2024-06-18 12:44:50,279 - INFO - [029]: loss: 0.0626 - train acc: 92.0437 - test acc: 87.395 - test eer : 0.4286 -val loss: 0.0613 
+2024-06-18 12:47:40,588 - INFO - [030]: loss: 0.0641 - train acc: 91.4197 - test acc: 92.437 - test eer : 0.3103 -val loss: 0.054 
+2024-06-18 12:50:28,716 - INFO - [031]: loss: 0.0596 - train acc: 91.6537 - test acc: 94.1176 - test eer : 0.2593 -val loss: 0.0575 
+2024-06-18 12:53:16,731 - INFO - [032]: loss: 0.0593 - train acc: 91.4977 - test acc: 95.7983 - test eer : 0.2 -val loss: 0.0482 
+2024-06-18 12:56:04,914 - INFO - [033]: loss: 0.0611 - train acc: 90.7956 - test acc: 91.5966 - test eer : 0.3333 -val loss: 0.0562 
+2024-06-18 12:58:52,957 - INFO - [034]: loss: 0.0579 - train acc: 91.3417 - test acc: 91.5966 - test eer : 0.3333 -val loss: 0.0519 
+2024-06-18 13:01:41,481 - INFO - [035]: loss: 0.0562 - train acc: 91.1856 - test acc: 95.7983 - test eer : 0.2 -val loss: 0.0494 
+2024-06-18 13:04:35,038 - INFO - [036]: loss: 0.0544 - train acc: 91.9657 - test acc: 92.437 - test eer : 0.3103 -val loss: 0.05 
+2024-06-18 13:07:44,538 - INFO - [037]: loss: 0.0538 - train acc: 91.5757 - test acc: 94.958 - test eer : 0.2308 -val loss: 0.0494 
+2024-06-18 13:11:03,756 - INFO - [038]: loss: 0.0524 - train acc: 91.9657 - test acc: 93.2773 - test eer : 0.2857 -val loss: 0.0479 
+2024-06-18 13:14:23,605 - INFO - [039]: loss: 0.0517 - train acc: 91.9657 - test acc: 97.479 - test eer : 0.1304 -val loss: 0.0432 
+2024-06-18 13:17:49,915 - INFO - [040]: loss: 0.0508 - train acc: 91.5757 - test acc: 94.958 - test eer : 0.2308 -val loss: 0.0425 
+2024-06-18 13:20:45,436 - INFO - [041]: loss: 0.0504 - train acc: 91.9657 - test acc: 94.958 - test eer : 0.2308 -val loss: 0.042 
+2024-06-18 13:23:37,355 - INFO - [042]: loss: 0.0503 - train acc: 92.8237 - test acc: 84.8739 - test eer : 0.4737 -val loss: 0.0574 
+2024-06-18 13:26:29,518 - INFO - [043]: loss: 0.0518 - train acc: 90.7956 - test acc: 96.6387 - test eer : 0.1667 -val loss: 0.0395 
+2024-06-18 13:29:19,903 - INFO - [044]: loss: 0.052 - train acc: 91.8877 - test acc: 97.479 - test eer : 0.1304 -val loss: 0.0384 
+2024-06-18 13:32:11,580 - INFO - [045]: loss: 0.0524 - train acc: 92.1217 - test acc: 92.437 - test eer : 0.3103 -val loss: 0.043 
+2024-06-18 13:35:02,881 - INFO - [046]: loss: 0.049 - train acc: 92.5117 - test acc: 96.6387 - test eer : 0.1667 -val loss: 0.0428 
+2024-06-18 13:37:57,295 - INFO - [047]: loss: 0.0471 - train acc: 92.4337 - test acc: 96.6387 - test eer : 0.1667 -val loss: 0.0371 
+2024-06-18 13:40:47,403 - INFO - [048]: loss: 0.0467 - train acc: 92.8237 - test acc: 94.958 - test eer : 0.2308 -val loss: 0.0399 
+2024-06-18 13:43:36,582 - INFO - [049]: loss: 0.0433 - train acc: 93.2137 - test acc: 98.3193 - test eer : 0.0909 -val loss: 0.0379 

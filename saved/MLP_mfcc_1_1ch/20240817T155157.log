@@ -1,0 +1,35 @@
+2024-08-17 15:51:57,044 - INFO - Batch size: 32, seed: 42, epochs: 50
+2024-08-17 15:51:57,045 - INFO - Evaluating model: MLP
+2024-08-17 15:51:57,045 - INFO - Input feature : mfcc
+2024-08-17 15:51:57,045 - INFO - Model kwargs  : {
+  "in_dim": 3240,
+  "out_dim": 1,
+  "device": "cuda"
+}
+2024-08-17 15:51:57,045 - INFO - Loading data...
+2024-08-17 15:51:57,063 - INFO - Loading data from /home/gunwoo/kunwoolee/DEEPFAKE_project/Data_split/splilt_1/test/real...!
+2024-08-17 15:51:57,260 - INFO - Loading data from /home/gunwoo/kunwoolee/DEEPFAKE_project/Data_split/splilt_1/test/fake...!
+2024-08-17 15:51:57,304 - INFO - Testing model on  7504 audio files.
+2024-08-17 15:51:57,517 - INFO - Model_summary: 
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+MLP                                      [32, 1]                   240
+├─Linear: 1-1                            [32, 120]                 388,920
+├─Linear: 1-2                            [32, 80]                  9,680
+├─BatchNorm1d: 1-3                       [32, 80]                  160
+├─Linear: 1-4                            [32, 1]                   81
+==========================================================================================
+Total params: 399,081
+Trainable params: 399,081
+Non-trainable params: 0
+Total mult-adds (M): 12.76
+==========================================================================================
+Input size (MB): 0.41
+Forward/backward pass size (MB): 0.07
+Params size (MB): 1.60
+Estimated Total Size (MB): 2.08
+==========================================================================================
+2024-08-17 15:51:57,518 - INFO - Loaded checkpoint from epoch 7
+2024-08-17 15:52:33,988 - INFO - test acc: 96.72 - test eer : 0.111
+2024-08-17 15:52:33,997 - INFO - Prediction Saved: saved/MLP_mfcc_1_1ch/best_pred.json
