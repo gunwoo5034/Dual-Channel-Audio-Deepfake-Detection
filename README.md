@@ -4,13 +4,13 @@ This code is modified from [MarHershey's Repository](https://github.com/MarkHers
 
 ## Set up Environment
 
-'''bash
+```bash
 # Python virtual enviroment
 conda create -n AudioDetection python=3.8
 
 # Install required
 pip install -r requirements.txt
-'''
+```
 
 
 ## Set up Dataset
