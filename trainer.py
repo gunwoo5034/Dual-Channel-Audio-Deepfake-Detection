@@ -6,7 +6,6 @@ import numpy as np
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, Dataset
-from torch.utils.tensorboard import SummaryWriter
 from metrics import alt_compute_eer
 from utils import save_checkpoint, save_pred, set_learning_rate
 from sklearn.metrics import roc_auc_score
