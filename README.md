@@ -21,7 +21,7 @@ You may download the datasets from following URLs:
 - FakeAVCeleb : [Link](https://sites.google.com/view/fakeavcelebdash-lab/)
 - SPC(Self Colleted) : Not published
 
-After downloading dataset, you may set them under 'Data/train' and 'Data/test'. Dataset folder should look like:
+After downloading dataset, you may set them under `Data/train` and `Data/test`. Dataset folder should look like:
 
 ```
 Data
