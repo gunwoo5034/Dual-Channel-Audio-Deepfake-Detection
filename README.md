@@ -40,7 +40,7 @@ Data
 
 ## Training
 
-Use the ['train.py'](train.py) to train the model.
+Use the [`train.py`](train.py) to train the model.
 
 ```
 usage: train.py [--train_dir TRAIN_DIR] [--test_dir TEST_DIR] [--batch_size BATCH_SIZE] [--epochs EPOCHS]
@@ -94,3 +94,5 @@ Run the following command to compute the evaluation results based on saved predi
 ```
 python metrics.py
 ```
+
+
