@@ -19,7 +19,7 @@ You may download the datasets from following URLs:
 
 - ASVspoof 2019 : [Link](https://www.asvspoof.org/index2019.html)
 - FakeAVCeleb : [Link](https://sites.google.com/view/fakeavcelebdash-lab/)
-- SPC(Self Colleted) : Not published
+- SPC(Self Colleted) : Not published (The information about the SPC data can be found in the Info of SPC dataset.xlsx file.)
 
 After downloading dataset, you may set them under `Data/train` and `Data/test`. Dataset folder should look like:
 
